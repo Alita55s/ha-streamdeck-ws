@@ -1,0 +1,24 @@
+{
+  "name": "Stream Deck WebSocket (Independent)",
+  "version": "0.1.0",
+  "slug": "streamdeck_ws",
+  "description": "Independent Stream Deck controller via Python + HA WebSocket",
+  "startup": "services",
+  "boot": "auto",
+  "host_network": true,
+  "usb": true,
+  "devices": [
+    "/dev/input/event0",
+    "/dev/input/event1",
+    "/dev/input/event2",
+    "/dev/input/event3",
+    "/dev/input/event4",
+    "/dev/input/event5",
+    "/dev/hidraw0",
+    "/dev/hidraw1",
+    "/dev/hidraw2"
+  ],
+  "arch": ["aarch64"],
+  "options": {},
+  "schema": {}
+}
