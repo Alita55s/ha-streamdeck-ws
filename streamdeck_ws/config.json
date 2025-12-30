@@ -1,6 +1,6 @@
 {
   "name": "Stream Deck WebSocket (Independent)",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "slug": "streamdeck_ws",
   "description": "Independent Stream Deck controller via Python + HA WebSocket",
   "startup": "services",
@@ -19,6 +19,12 @@
     "/dev/hidraw2"
   ],
   "arch": ["aarch64"],
-  "options": {},
-  "schema": {}
+  "options": {
+    "ha_ws_url": "ws://supervisor/core/websocket",
+    "ha_token": ""
+  },
+  "schema": {
+    "ha_ws_url": "str",
+    "ha_token": "password"
+  }
 }
